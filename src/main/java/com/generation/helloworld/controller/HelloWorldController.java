@@ -1,11 +1,12 @@
 package com.generation.helloworld.controller;
 
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/exemplo")
 
 public class HelloWorldController {
 	
@@ -16,7 +17,8 @@ public class HelloWorldController {
 	
 	@GetMapping("/lista-bdsm")
 	public String listaBdsm() {
-		return "Orientação ao Futuro, Responsabilide Pessoal, Mentalidade de Crescimento, Persistência, Trabalho em Equipe, Proatividade e Comunicação";
+		
+		return "[Orientação ao Futuro]\n[Responsabilidade Pessoal]\n[Mentalidade de Crescimento]\n[Persistência]\n[Trabalho em Equipe]\n[Comunicação]\n[Orientação ao Detalhe]";			
 	}
 	
 	@GetMapping("/objetivos-semana")
